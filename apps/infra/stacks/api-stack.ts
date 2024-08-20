@@ -8,10 +8,11 @@ export class ApiStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps) {
     super(scope, id, props);
 
-    const apiHandler = new NodejsFunction(this, "api", {
+    const apiHandler = new NodejsFunction(this, "api-lambda", {
       entry: "node_modules/@well-of-mimir/api/src/index.ts",
       runtime: Runtime.NODEJS_20_X,
-      depsLockFilePath: "../../common/config/rush/pnpm-lock.yaml"
+      handler: 'handler',
+      depsLockFilePath: "../../common/temp/pnpm-lock.yaml"
     })
 
     apiHandler.addFunctionUrl({
@@ -24,3 +25,4 @@ export class ApiStack extends Stack {
     })
   }
 }
+
