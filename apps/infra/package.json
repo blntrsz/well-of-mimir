@@ -6,7 +6,7 @@
     "infra": "bin/deploy.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "echo build",
     "watch": "tsc -w",
     "cdk": "cdk"
   },

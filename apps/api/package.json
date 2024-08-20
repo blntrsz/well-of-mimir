@@ -2,7 +2,9 @@
   "name": "@well-of-mimir/api",
   "version": "0.0.0",
   "type": "module",
-  "scripts": { },
+  "scripts": {
+    "build": "echo build"
+  },
   "devDependencies": {
     "@well-of-mimir/config": "workspace:*",
     "@well-of-mimir/core": "workspace:*",
