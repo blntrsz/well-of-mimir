@@ -19,7 +19,7 @@ export class ApiStack extends Stack {
 
     })
 
-    new LambdaRestApi(this, 'myapi', {
+    new LambdaRestApi(this, 'api', {
       handler: apiHandler,
     })
   }

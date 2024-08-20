@@ -1,12 +1,11 @@
 {
   "name": "@well-of-mimir/asgard",
   "version": "0.0.0",
-  "main": "./src/index.ts",
   "type": "module",
+  "main": "./src/index.ts",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
     "cdk": "cdk"
   },
   "devDependencies": {

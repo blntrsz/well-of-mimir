@@ -3,23 +3,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
-      "name": "@eslint/js",
-      "allowedCategories": [ "production" ]
-    },
-    {
       "name": "@vitejs/plugin-react-swc",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "@well-of-mimir/api",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "@well-of-mimir/asgard",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "@well-of-mimir/config",
       "allowedCategories": [ "production" ]
     },
     {
@@ -39,31 +23,11 @@
       "allowedCategories": [ "production" ]
     },
     {
-      "name": "eslint",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "eslint-plugin-react-hooks",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "eslint-plugin-react-refresh",
-      "allowedCategories": [ "production" ]
-    },
-    {
       "name": "globals",
       "allowedCategories": [ "production" ]
     },
     {
       "name": "hono",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "jest",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "npm-run-all2",
       "allowedCategories": [ "production" ]
     },
     {
@@ -79,23 +43,11 @@
       "allowedCategories": [ "production" ]
     },
     {
-      "name": "ts-jest",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "ts-node",
-      "allowedCategories": [ "production" ]
-    },
-    {
       "name": "tsx",
       "allowedCategories": [ "production" ]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "production" ]
-    },
-    {
-      "name": "typescript-eslint",
       "allowedCategories": [ "production" ]
     },
     {

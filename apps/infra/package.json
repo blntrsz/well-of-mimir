@@ -1,14 +1,13 @@
 {
   "name": "@well-of-mimir/infra",
   "version": "0.0.0",
-  "bin": {
-    "infra": "bin/infra.js"
-  },
   "type": "module",
+  "bin": {
+    "infra": "bin/deploy.js"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
     "cdk": "cdk"
   },
   "devDependencies": {
@@ -25,6 +24,6 @@
     "constructs": "^10.3.0",
     "source-map-support": "^0.5.21",
     "tsx": "~4.17.0",
-    "esbuild": "^0.21.4"
+    "esbuild": "^0.23.1"
   }
 }

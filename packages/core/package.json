@@ -1,11 +1,15 @@
 {
   "name": "@well-of-mimir/core",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "todo-management": {
+      "import": "./todo-management/index.ts",
+      "require": "./todo-management/index.ts"
+    }
   },
   "keywords": [],
   "author": "",
