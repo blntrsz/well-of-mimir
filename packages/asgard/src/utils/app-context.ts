@@ -1,5 +1,5 @@
 import { AsgardApp } from "../app";
-import { BaseEnvironment, Props } from "../types";
+import type { BaseEnvironment, Props } from "../types";
 import { Context } from "./context";
 
 type Extract<Type> = Type extends AsgardApp<infer X> ? X : never;

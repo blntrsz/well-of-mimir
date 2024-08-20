@@ -1,6 +1,6 @@
-import { Stage as CDKStage, StageProps } from "aws-cdk-lib";
+import { Stage as CDKStage, type StageProps } from "aws-cdk-lib";
 import { Construct } from "constructs";
-import { BaseEnvironment, Props } from "../types";
+import type { BaseEnvironment, Props } from "../types";
 import { getScope, getScopedName } from "../utils/scope";
 
 export class Stage<TEnvironment extends BaseEnvironment> extends CDKStage {

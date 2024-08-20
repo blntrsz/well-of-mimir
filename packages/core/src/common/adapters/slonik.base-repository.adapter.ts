@@ -1,4 +1,4 @@
-import { BaseRepository } from "@well-of-mimir/core/common/ports/base-repository.port";
+import type { BaseRepository } from "@well-of-mimir/core/common/ports/base-repository.port";
 
 export class SlonikBaseRepository<TEntity> implements BaseRepository<TEntity> {
   getOneById(id: string): Promise<TEntity> {

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "echo build",
     "watch": "tsc -w",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",

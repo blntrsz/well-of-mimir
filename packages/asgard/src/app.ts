@@ -1,5 +1,5 @@
-import { App, AppProps } from "aws-cdk-lib";
-import { Props, BaseEnvironment } from "./types";
+import { App, type AppProps } from "aws-cdk-lib";
+import type { Props, BaseEnvironment } from "./types";
 import { DevPipeline } from "./stacks/dev-pipeline";
 import { MainPipeline } from "./stacks/main-pipeline";
 import { getScope, getScopedName } from "./utils/scope";

@@ -1,7 +1,7 @@
 import { AsyncLocalStorage } from "async_hooks";
 
 export class ContextNotFoundError extends Error {
-  constructor(public name: string) {
+  constructor(public override name: string) {
     super(
       `${name} context was not provided. It is possible you have multiple versions of SST installed.`,
     );

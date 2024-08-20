@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "echo build"
+    "build": "echo build",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@well-of-mimir/config": "workspace:*",
@@ -11,6 +12,7 @@
     "esbuild": "^0.23.1"
   },
   "dependencies": {
-    "hono": "^4.5.6"
+    "hono": "^4.5.6",
+    "typescript": "~5.5.4"
   }
 }

@@ -39,6 +39,13 @@
       "shellCommand": "eslint . --fix",
       "name": "lint:fix"
     },
+    {
+      "commandKind": "bulk",
+      "enableParallelism": true,
+      "summary": "Typecheck projects",
+      "ignoreMissingScript": true,
+      "name": "typecheck"
+    },
     // {
     //   /**
     //    * (Required) Determines the type of custom command.

@@ -1,10 +1,10 @@
-import { TodoRepository } from "@well-of-mimir/core/todo-management/domain/repository/todo.repository";
+import type { TodoRepository } from "@well-of-mimir/core/todo-management/domain/repository/todo.repository";
 
 export class GetOneTodoById {
   constructor(
     private readonly todoRepository: TodoRepository,
     private readonly logger: any,
-  ) {}
+  ) { }
 
   execute(id: string) {
     try {

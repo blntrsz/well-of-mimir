@@ -25,3 +25,7 @@ jobs:
         run: node common/scripts/install-run-rush.js install
       - name: Rush rebuild
         run: node common/scripts/install-run-rush.js rebuild --verbose
+      - name: Check format
+        run: node common/scripts/install-run-rush.js format --verbose
+      - name: Check types
+        run: node common/scripts/install-run-rush.js typecheck --verbose

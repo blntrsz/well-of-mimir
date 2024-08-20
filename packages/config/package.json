@@ -4,5 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "echo build"
+  },
+  "dependencies": {
+    "typescript": "~5.5.4"
   }
 }

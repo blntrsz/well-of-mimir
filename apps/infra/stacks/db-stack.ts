@@ -1,4 +1,4 @@
-import { Stack, StackProps } from "aws-cdk-lib";
+import { Stack, type StackProps } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { AttributeType, Table } from "aws-cdk-lib/aws-dynamodb";
 

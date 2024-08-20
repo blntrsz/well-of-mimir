@@ -10,9 +10,9 @@ import {
 } from "aws-cdk-lib/aws-codepipeline";
 import { Construct } from "constructs";
 import { Stage } from "./stage";
-import { Stack, StackProps } from "aws-cdk-lib";
+import { Stack, type StackProps } from "aws-cdk-lib";
 import { getScope } from "../utils/scope";
-import { BaseEnvironment, Props } from "../types";
+import type { BaseEnvironment, Props } from "../types";
 import { DEPLOY_SCOPE } from "../constants";
 import { join } from "path";
 import { withEnvContext } from "../utils/app-context";

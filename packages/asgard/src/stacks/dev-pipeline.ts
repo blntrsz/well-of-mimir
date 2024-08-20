@@ -8,7 +8,7 @@ import {
   Artifact,
 } from "aws-cdk-lib/aws-codepipeline";
 import { Construct } from "constructs";
-import { Stack, StackProps } from "aws-cdk-lib";
+import { Stack, type StackProps } from "aws-cdk-lib";
 import { Rule } from "aws-cdk-lib/aws-events";
 import {
   CodeStarConnectionsSourceAction,
@@ -19,7 +19,7 @@ import {
   LinuxBuildImage,
   PipelineProject,
 } from "aws-cdk-lib/aws-codebuild";
-import { BaseEnvironment, Props } from "../types";
+import type { BaseEnvironment, Props } from "../types";
 import { PolicyStatement, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
 
 const ACTION_NAME = "pipeline_pr_action";
@@ -56,8 +56,8 @@ export class DevPipeline<TEnvironment extends BaseEnvironment> extends Stack {
 
     const source = [
       new CodeStarConnectionsSourceAction({
-        owner,
-        repo: repository,
+        owner: owner!,
+        repo: repository!,
         output: artifact,
         actionName: ACTION_NAME,
         triggerOnPush: false,
@@ -121,7 +121,7 @@ export class DevPipeline<TEnvironment extends BaseEnvironment> extends Stack {
           bind() {
             return {};
           },
-          onStateChange() {
+          onStateChange: () => {
             return new Rule(this, "rule");
           },
         },

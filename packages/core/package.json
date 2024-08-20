@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "echo build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit"
   },
   "exports": {
     "todo-management": {
@@ -17,5 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "@well-of-mimir/config": "workspace:*"
+  },
+  "dependencies": {
+    "typescript": "~5.5.4"
   }
 }

@@ -104,6 +104,7 @@ common/temp/
 common/autoinstallers/*/.npmrc
 **/.rush/temp/
 *.lock
+rush-logs
 
 # Common toolchain intermediate files
 temp/
