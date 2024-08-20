@@ -11,6 +11,7 @@ export class ApiStack extends Stack {
     const apiHandler = new NodejsFunction(this, "api", {
       entry: "node_modules/@well-of-mimir/api/src/index.ts",
       runtime: Runtime.NODEJS_20_X,
+      depsLockFilePath: "../../common/config/rush/pnpm-lock.yaml"
     })
 
     apiHandler.addFunctionUrl({
