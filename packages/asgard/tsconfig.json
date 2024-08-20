@@ -1,6 +1,11 @@
 {
   "extends": "./node_modules/@well-of-mimir/config/tsconfig.json",
   "compilerOptions": {
-    "types": []
-  }
+    "types": [],
+    "baseUrl": ".",
+    "paths": {
+      "@well-of-mimir/asgard/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
 }

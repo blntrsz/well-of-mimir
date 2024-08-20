@@ -3,6 +3,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@eslint/js",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "@vitejs/plugin-react-swc",
       "allowedCategories": [ "production" ]
     },
@@ -23,11 +27,23 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "eslint",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint-plugin-react",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "globals",
       "allowedCategories": [ "production" ]
     },
     {
       "name": "hono",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "prettier",
       "allowedCategories": [ "production" ]
     },
     {
@@ -52,6 +68,10 @@
     },
     {
       "name": "typescript",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript-eslint",
       "allowedCategories": [ "production" ]
     },
     {

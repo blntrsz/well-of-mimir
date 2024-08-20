@@ -4,8 +4,8 @@ export type TodoAttributes = {
   description: string;
   createdAt: Date;
   updatedAt: Date;
-}
+};
 
 export class Todo {
-  constructor(public readonly attributes: TodoAttributes) { }
+  constructor(public readonly attributes: TodoAttributes) {}
 }

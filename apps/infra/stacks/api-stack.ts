@@ -11,18 +11,15 @@ export class ApiStack extends Stack {
     const apiHandler = new NodejsFunction(this, "api-lambda", {
       entry: "node_modules/@well-of-mimir/api/src/index.ts",
       runtime: Runtime.NODEJS_20_X,
-      handler: 'handler',
-      depsLockFilePath: "../../common/temp/pnpm-lock.yaml"
-    })
+      depsLockFilePath: "../../common/temp/pnpm-lock.yaml",
+    });
 
     apiHandler.addFunctionUrl({
       authType: FunctionUrlAuthType.NONE,
+    });
 
-    })
-
-    new LambdaRestApi(this, 'api', {
+    new LambdaRestApi(this, "api", {
       handler: apiHandler,
-    })
+    });
   }
 }
-

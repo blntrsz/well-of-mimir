@@ -11,6 +11,34 @@
    * "rush my-global-command --help".
    */
   "commands": [
+    {
+      "commandKind": "global",
+      "summary": "run formatter (prettier)",
+      "shellCommand": "prettier . --check --cache",
+      "autoinstallerName": "base",
+      "name": "format"
+    },
+    {
+      "commandKind": "global",
+      "summary": "run formatter with write (prettier)",
+      "shellCommand": "prettier . --write --cache --list-different",
+      "autoinstallerName": "base",
+      "name": "format:fix"
+    },
+    {
+      "commandKind": "bulk",
+      "enableParallelism": true,
+      "summary": "run linter (eslint)",
+      "shellCommand": "eslint . --cache",
+      "name": "lint"
+    },
+    {
+      "commandKind": "bulk",
+      "enableParallelism": true,
+      "summary": "run linter (eslint)",
+      "shellCommand": "eslint . --fix",
+      "name": "lint:fix"
+    },
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
