@@ -11,6 +11,14 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "@well-of-mimir/api",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@well-of-mimir/asgard",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "@well-of-mimir/config",
       "allowedCategories": [ "production" ]
     },

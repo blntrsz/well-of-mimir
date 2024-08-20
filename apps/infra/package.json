@@ -1,6 +1,6 @@
 {
   "name": "@well-of-mimir/infra",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "bin": {
     "infra": "bin/infra.js"
   },
@@ -14,11 +14,10 @@
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "22.4.1",
+    "@well-of-mimir/asgard": "workspace:*",
+    "@well-of-mimir/api": "workspace:*",
     "@well-of-mimir/config": "workspace:*",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.4",
     "aws-cdk": "2.153.0",
-    "ts-node": "^10.9.2",
     "typescript": "~5.5.4"
   },
   "dependencies": {

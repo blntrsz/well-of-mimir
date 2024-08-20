@@ -1,21 +1,46 @@
 #!/usr/bin/env node
-import 'source-map-support/register';
-import * as cdk from 'aws-cdk-lib';
-import { InfraStack } from '../lib/infra-stack';
+import "source-map-support/register";
+import { AsgardApp } from "@well-of-mimir/asgard";
+import { ApiStack } from "../stacks/api-stack";
+import { SpaStack } from "../stacks/spa-stack";
+import { DbStack } from "../stacks/db-stack";
 
-const app = new cdk.App();
-new InfraStack(app, 'InfraStack', {
-  /* If you don't specify 'env', this stack will be environment-agnostic.
-   * Account/Region-dependent features and context lookups will not work,
-   * but a single synthesized template can be deployed anywhere. */
+const CONNECTION_ARN =
+  "arn:aws:codeconnections:eu-central-1:021891617269:connection/b8d174cd-4d30-4f76-835d-cf554eb319c9";
 
-  /* Uncomment the next line to specialize this stack for the AWS Account
-   * and Region that are implied by the current CLI configuration. */
-  // env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
-
-  /* Uncomment the next line if you know exactly what Account and Region you
-   * want to deploy the stack to. */
-  // env: { account: '123456789012', region: 'us-east-1' },
-
-  /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
+export const app = new AsgardApp({
+  projectName: "asgard",
+  repositoryName: "blntrsz/asgard",
+  mainBranch: "main",
+  connectionArn: CONNECTION_ARN,
+  path: "packages/app/",
+  pipelineEnv: {
+    account: "021891617269",
+    region: "eu-central-1",
+  },
+  waves: {
+    dev: {
+      eu: {
+        account: "021891617269",
+        region: "eu-central-1",
+      },
+    },
+    prod: {
+      eu: {
+        account: "021891617269",
+        region: "eu-central-1",
+      },
+    },
+  },
+  create(scope, getScopedName) {
+    new DbStack(scope, "db", {
+      stackName: getScopedName("db"),
+    });
+    new ApiStack(scope, "api", {
+      stackName: getScopedName("api"),
+    });
+    new SpaStack(scope, "spa", {
+      stackName: getScopedName("spa"),
+    });
+  },
 });
