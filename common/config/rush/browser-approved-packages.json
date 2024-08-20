@@ -1,0 +1,98 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@eslint/js",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@vitejs/plugin-react-swc",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@well-of-mimir/config",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "aws-cdk",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "aws-cdk-lib",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "constructs",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "esbuild",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "globals",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "hono",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "npm-run-all2",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "source-map-support",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "tsx",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript-eslint",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "vite",
+      "allowedCategories": [ "production" ]
+    }
+  ]
+}
