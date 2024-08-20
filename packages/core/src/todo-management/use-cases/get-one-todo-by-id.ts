@@ -4,7 +4,7 @@ export class GetOneTodoById {
   constructor(
     private readonly todoRepository: TodoRepository,
     private readonly logger: any,
-  ) { }
+  ) {}
 
   execute(id: string) {
     try {
