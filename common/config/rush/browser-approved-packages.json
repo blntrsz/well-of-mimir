@@ -39,6 +39,10 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "react-router-dom",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "source-map-support",
       "allowedCategories": [ "production" ]
     },
