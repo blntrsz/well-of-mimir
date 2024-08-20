@@ -10,6 +10,9 @@ importers:
 
   ../../apps/api:
     dependencies:
+      '@hono/zod-openapi':
+        specifier: ~0.15.3
+        version: 0.15.3(hono@4.5.6)
       hono:
         specifier: ^4.5.6
         version: 4.5.6
@@ -17,6 +20,9 @@ importers:
         specifier: ~5.5.4
         version: 5.5.4
     devDependencies:
+      '@types/node':
+        specifier: 22.4.1
+        version: 22.4.1
       '@well-of-mimir/config':
         specifier: workspace:*
         version: link:../../packages/config
@@ -146,6 +152,14 @@ importers:
         version: link:../config
 
 packages:
+
+  /@asteasolutions/zod-to-openapi@7.1.1:
+    resolution: {integrity: sha512-lF0d1gAc0lYLO9/BAGivwTwE2Sh9h6CHuDcbk5KnGBfIuAsAkDC+Fdat4dkQY3CS/zUWKHRmFEma0B7X132Ymw==}
+    peerDependencies:
+      zod: ^3.20.2
+    dependencies:
+      openapi3-ts: 4.3.3
+    dev: false
 
   /@aws-cdk/asset-awscli-v1@2.2.202:
     resolution: {integrity: sha512-JqlF0D4+EVugnG5dAsNZMqhu3HW7ehOXm5SDMxMbXNDMdsF0pxtQKNHRl52z1U9igsHmaFpUgSGjbhAJ+0JONg==}
@@ -580,6 +594,27 @@ packages:
     os: [win32]
     requiresBuild: true
     optional: true
+
+  /@hono/zod-openapi@0.15.3(hono@4.5.6):
+    resolution: {integrity: sha512-9oc4Bbs+L5oGjUOCrApCrx8BSWa5ctOBjRcwxplxkWPYFPhyOhdkMg47QKenGkESfFz0K6zb4F/c0LGPEmR62g==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      hono: '>=4.3.6'
+      zod: 3.*
+    dependencies:
+      '@asteasolutions/zod-to-openapi': 7.1.1
+      '@hono/zod-validator': 0.2.2(hono@4.5.6)
+      hono: 4.5.6
+    dev: false
+
+  /@hono/zod-validator@0.2.2(hono@4.5.6):
+    resolution: {integrity: sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.19.1
+    dependencies:
+      hono: 4.5.6
+    dev: false
 
   /@jest/expect-utils@29.7.0:
     resolution: {integrity: sha512-GlsNBWiFQFCVi9QVSx7f5AgMeLxe9YCCs5PuP2O2LdjDAA8Jh9eX7lA1Jq/xdXw3Wb3hyvlFNfZIfcRetSzYcA==}
@@ -1279,6 +1314,12 @@ packages:
     hasBin: true
     dev: true
 
+  /openapi3-ts@4.3.3:
+    resolution: {integrity: sha512-LKkzBGJcZ6wdvkKGMoSvpK+0cbN5Xc3XuYkJskO+vjEQWJgs1kgtyUk0pjf8KwPuysv323Er62F5P17XQl96Qg==}
+    dependencies:
+      yaml: 2.5.0
+    dev: false
+
   /picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
     dev: true
@@ -1493,3 +1534,9 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /yaml@2.5.0:
+    resolution: {integrity: sha512-2wWLbGbYDiSqqIKoPjar3MPgB94ErzCtrNE1FdqGuaO0pi2JGjmE8aW8TDZwzU7vuxcGRdL/4gPQwQ7hD5AMSw==}
+    engines: {node: '>= 14'}
+    hasBin: true
+    dev: false

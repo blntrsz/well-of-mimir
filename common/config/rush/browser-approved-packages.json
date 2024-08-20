@@ -7,6 +7,10 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "@hono/zod-openapi",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "@vitejs/plugin-react-swc",
       "allowedCategories": [ "production" ]
     },
@@ -60,6 +64,10 @@
     },
     {
       "name": "source-map-support",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "tsup",
       "allowedCategories": [ "production" ]
     },
     {
